@@ -6,7 +6,7 @@ import logo from '../assets/img/code.png';
 
 function NavBar() {
   return (
-    <Row justify='center' align='middle' className='header bg-color-secondary'>
+    <Row justify='center' align='middle' className='header'>
       <Col xs={12} sm={10} md={8} lg={6} xl={6}>
         <Image preview={false} className='header-logo' src={logo} />
       </Col>

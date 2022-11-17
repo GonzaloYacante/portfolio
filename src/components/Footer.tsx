@@ -1,12 +1,20 @@
 import { InstagramOutlined, GithubOutlined, LinkedinFilled, CopyrightOutlined, MailOutlined } from '@ant-design/icons';
-import { Button, Col, Row, Space, Typography } from "antd";
+import { Button, Col, Row, Space, Typography, Popover } from "antd";
 import '../assets/style/components/Footer.less';
 
-const { Text } = Typography;
+const { Text, Paragraph } = Typography;
+
+const content = (
+  <div>
+    <Paragraph copyable>
+      gyacante9@gmail.com
+    </Paragraph>
+  </div>
+);
 
 function Footer() {
   return (
-      <Row className="contain-footer bg-color-secondary" justify='center' align="middle">
+      <Row className="contain-footer" justify='center' align="middle">
         <Col>
           <Space size={20} direction='vertical' align='center'>
             <Row justify="center" align="middle">
@@ -27,14 +35,16 @@ function Footer() {
                   </Button>
                 </Col>
                 <Col>
-                  <Button className="footer-icons" shape="circle" type='link' href="https://www.linkedin.com/in/gonzaloyacante/" target="blank">
-                    <MailOutlined />
-                  </Button>
+                  <Popover overlayClassName={"bg-color-secondary"} content={content} trigger="hover">
+                    <Button className="footer-icons " shape="circle" type='link' href="gyacante9@gmail.com" target="blank">
+                      <MailOutlined />
+                    </Button>
+                  </Popover>
                 </Col>
               </Space>
             </Row>
             <Row justify="center" align="middle">
-              <Text>
+              <Text strong>
                 2022 <CopyrightOutlined /> Gonzalo Yacante
               </Text>
             </Row>
