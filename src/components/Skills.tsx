@@ -7,54 +7,70 @@ import javascript from '../assets/img/javascript.svg';
 import typescript from '../assets/img/typescript.svg';
 import react from '../assets/img/react.svg';
 import git from '../assets/img/git.svg';
+import less from '../assets/img/less.svg';
+import antDesign from '../assets/img/antDesign.svg';
 
 const { Title, Text } = Typography;
 
 function Skills() {
   return (
     <div className='skills'>
-      <Title className='primary-color' level={3}>Habilidades</Title>
+      <Title className='titles-sections' level={3}>Habilidades</Title>
       <Row className='skills_contain' justify='center' align='middle'>
         <Col>
-          <div className='skills_card bg-color-secondary'>
-            <Image preview={false} className='skills_card-img' src={html} />
+          <div className='skills_card'>
+            <Image preview={false} className='skills_card-img' alt='Imagen del logo de HTML5' src={html} />
             <Divider className='skills_card-divider' />
             <Text strong>HTML5</Text>
           </div>
         </Col>
         <Col>
-          <div className='skills_card bg-color-secondary'>
-            <Image preview={false} className='skills_card-img' src={css} />
+          <div className='skills_card'>
+            <Image preview={false} className='skills_card-img' alt='Imagen del logo de CSS3' src={css} />
             <Divider className='skills_card-divider' />
             <Text strong>CSS3</Text>
           </div>
         </Col>
         <Col>
-          <div className='skills_card bg-color-secondary'>
-            <Image preview={false} className='skills_card-img' src={javascript} />
+          <div className='skills_card'>
+            <Image preview={false} className='skills_card-img' alt='Imagen del logo de JavaScript' src={javascript} />
             <Divider className='skills_card-divider' />
             <Text strong>JavaScript</Text>
           </div>
         </Col>
         <Col>
-          <div className='skills_card bg-color-secondary'>
-            <Image preview={false} className='skills_card-img' src={typescript} />
+          <div className='skills_card'>
+            <Image preview={false} className='skills_card-img' alt='Imagen del logo de TypeScript' src={typescript} />
             <Divider className='skills_card-divider' />
             <Text strong>TypeScript</Text>
           </div>
         </Col>
         <Col>
-          <div className='skills_card bg-color-secondary'>
-            <Image preview={false} className='skills_card-img' src={react} />
+          <div className='skills_card'>
+            <Image preview={false} className='skills_card-img' alt='Imagen del logo de React JS' src={react} />
             <Divider className='skills_card-divider' />
             <Text strong>React JS</Text>
           </div>
         </Col>
         <Col>
-          <div className='skills_card bg-color-secondary'>
-            <Image preview={false} className='skills_card-img' src={git} />
+          <div className='skills_card'>
+            <Image preview={false} className='skills_card-img' alt='Imagen del logo de GIT' src={git} />
             <Divider className='skills_card-divider' />
             <Text strong>GIT</Text>
+          </div>
+        </Col>
+        <Col>
+          <div className='skills_card'>
+            <Image preview={false} className='skills_card-img' alt='Imagen del logo de less' src={less} />
+            <Divider className='skills_card-divider' />
+            <Text strong>Less</Text>
+          </div>
+        </Col>
+        <Col>
+          <div className='skills_card'>
+            <Image preview={false} className='skills_card-img' alt='Imagen del logo de Ant Design' src={antDesign} />
+            <Divider className='skills_card-divider' />
+            <Text strong>Ant Design</Text>
           </div>
         </Col>
       </Row>

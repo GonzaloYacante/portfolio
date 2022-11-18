@@ -14,6 +14,7 @@ const content = (
 
 function Footer() {
   return (
+    <footer>
       <Row className="contain-footer" justify='center' align="middle">
         <Col>
           <Space size={20} direction='vertical' align='center'>
@@ -51,6 +52,7 @@ function Footer() {
           </Space>
         </Col>
       </Row>
+    </footer>
   )
 }
 
