@@ -12,48 +12,48 @@ const { Title, Text } = Typography;
 
 function Skills() {
   return (
-    <div className='skills-contain'>
+    <div className='skills'>
       <Title className='primary-color' level={3}>Habilidades</Title>
-      <Row gutter={15} justify='center' align='middle'>
+      <Row className='skills_contain' justify='center' align='middle'>
         <Col>
-          <div className='skills-card bg-color-secondary'>
-            <Image preview={false} className='skills-card-img' src={html} />
-            <Divider />
+          <div className='skills_card bg-color-secondary'>
+            <Image preview={false} className='skills_card-img' src={html} />
+            <Divider className='skills_card-divider' />
             <Text strong>HTML5</Text>
           </div>
         </Col>
         <Col>
-          <div className='skills-card bg-color-secondary'>
-            <Image preview={false} className='skills-card-img' src={css} />
-            <Divider />
+          <div className='skills_card bg-color-secondary'>
+            <Image preview={false} className='skills_card-img' src={css} />
+            <Divider className='skills_card-divider' />
             <Text strong>CSS3</Text>
           </div>
         </Col>
         <Col>
-          <div className='skills-card bg-color-secondary'>
-            <Image preview={false} className='skills-card-img' src={javascript} />
-            <Divider />
+          <div className='skills_card bg-color-secondary'>
+            <Image preview={false} className='skills_card-img' src={javascript} />
+            <Divider className='skills_card-divider' />
             <Text strong>JavaScript</Text>
           </div>
         </Col>
         <Col>
-          <div className='skills-card bg-color-secondary'>
-            <Image preview={false} className='skills-card-img' src={typescript} />
-            <Divider />
+          <div className='skills_card bg-color-secondary'>
+            <Image preview={false} className='skills_card-img' src={typescript} />
+            <Divider className='skills_card-divider' />
             <Text strong>TypeScript</Text>
           </div>
         </Col>
         <Col>
-          <div className='skills-card bg-color-secondary'>
-            <Image preview={false} className='skills-card-img' src={react} />
-            <Divider />
+          <div className='skills_card bg-color-secondary'>
+            <Image preview={false} className='skills_card-img' src={react} />
+            <Divider className='skills_card-divider' />
             <Text strong>React JS</Text>
           </div>
         </Col>
         <Col>
-          <div className='skills-card bg-color-secondary'>
-            <Image preview={false} className='skills-card-img' src={git} />
-            <Divider />
+          <div className='skills_card bg-color-secondary'>
+            <Image preview={false} className='skills_card-img' src={git} />
+            <Divider className='skills_card-divider' />
             <Text strong>GIT</Text>
           </div>
         </Col>

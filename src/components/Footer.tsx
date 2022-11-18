@@ -35,8 +35,8 @@ function Footer() {
                   </Button>
                 </Col>
                 <Col>
-                  <Popover overlayClassName={"bg-color-secondary"} content={content} trigger="hover">
-                    <Button className="footer-icons " shape="circle" type='link' href="gyacante9@gmail.com" target="blank">
+                  <Popover content={content} trigger="click">
+                    <Button className="footer-icons " shape="circle" type='link' href="#">
                       <MailOutlined />
                     </Button>
                   </Popover>
