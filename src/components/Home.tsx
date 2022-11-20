@@ -14,7 +14,7 @@ function Home() {
         <Title className="home_contain-title" level={1}>
           Gonzalo Yacante.
         </Title>
-        <Title className="home_contain-subtitle" level={3}>
+        <Title className="home_contain-subtitle" level={2}>
           Construyendo cosas para la web.
         </Title>
         <Paragraph className="home_contain-paragraph">

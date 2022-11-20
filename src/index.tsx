@@ -5,7 +5,6 @@ import AppPortfolio from './AppPortfolio';
 import reportWebVitals from './reportWebVitals';
 
 
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

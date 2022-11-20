@@ -45,8 +45,8 @@ function Footer() {
               </Space>
             </Row>
             <Row justify="center" align="middle">
-              <Text strong>
-                2022 <CopyrightOutlined /> Gonzalo Yacante
+              <Text strong className='footer-copyright'>
+                2022 <CopyrightOutlined className='footer-copyright' /> Gonzalo Yacante
               </Text>
             </Row>
           </Space>

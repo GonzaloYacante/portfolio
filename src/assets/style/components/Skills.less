@@ -1,25 +1,40 @@
 .skills {
   min-height: 30rem;
+  background-color: var(--bg-color-primary);
 
   .skills_contain {
     margin: 0;
     padding: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .skills_card {
-      background-color: var(--bg-color-secondary);
-      height: 17rem;
-      width: 140px;
-      padding: 1.5rem;
-      text-align: center;
-      margin: 1.5rem;
+    .skills_contain-children {
+      min-width: 30rem;
+      max-width: 100rem;
+
+      .skills_card {
+        background-color: var(--bg-color-secondary);
+        height: 17rem;
+        width: 140px;
+        padding: 1.5rem;
+        text-align: center;
+        margin: 1.5rem;
+        border-radius: 0.5rem;
+    
+        .skills_card-img {
+          min-height: 100px;
+          max-height: 100px;
+        }
+    
+        .skills_card-divider {
+          margin: 1rem 0;
+        }
   
-      .skills_card-img {
-        min-height: 100px;
-        max-height: 100px;
-      }
-  
-      .skills_card-divider {
-        margin: 1rem 0;
+        .skills_card-text {
+          color: var(--text-color);
+        }
       }
     }
   }
