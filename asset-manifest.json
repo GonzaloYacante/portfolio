@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5240aee0.css",
-    "main.js": "/portfolio/static/js/main.96576135.js",
+    "main.css": "/portfolio/static/css/main.c2129b21.css",
+    "main.js": "/portfolio/static/js/main.b7b815b4.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/react.svg": "/portfolio/static/media/react.19465659ecf7a1122618d3dcf23bf337.svg",
     "static/media/antDesign.svg": "/portfolio/static/media/antDesign.739adb6afe19ea52b7371c1377557344.svg",
@@ -12,12 +12,12 @@
     "index.html": "/portfolio/index.html",
     "static/media/css.svg": "/portfolio/static/media/css.b3c0acbf83dd5d6e5ab455b9de967ab9.svg",
     "static/media/html.svg": "/portfolio/static/media/html.8c11e1a8364b520a311ac9bf8b5d2fbf.svg",
-    "main.5240aee0.css.map": "/portfolio/static/css/main.5240aee0.css.map",
-    "main.96576135.js.map": "/portfolio/static/js/main.96576135.js.map",
+    "main.c2129b21.css.map": "/portfolio/static/css/main.c2129b21.css.map",
+    "main.b7b815b4.js.map": "/portfolio/static/js/main.b7b815b4.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5240aee0.css",
-    "static/js/main.96576135.js"
+    "static/css/main.c2129b21.css",
+    "static/js/main.b7b815b4.js"
   ]
 }
