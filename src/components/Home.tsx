@@ -6,8 +6,8 @@ const { Title, Text, Paragraph } = Typography;
 
 function Home() {
   return (
-    <div className="home">
-      <div className="home_contain">
+    <div className="home sections">
+      <div className="home_contain sections_content">
         <Text className="home_contain-text">
           Hola, mi nombre es
         </Text>

@@ -1,5 +1,4 @@
-import useLocalStorage from 'use-local-storage';
-
+import useLocalStorage from "use-local-storage";
 import "./index.less";
 
 import NavBar from "./components/NavBar";
@@ -14,18 +13,17 @@ import { Layout, Switch } from "antd";
 const { Content } = Layout;
 
 function AppPortfolio() {
-
-  const [theme, setTheme] = useLocalStorage('dark', 'theme' ? 'light' : 'dark');
+  const [theme, setTheme] = useLocalStorage("dark", "theme" ? "light" : "dark");
 
   const switchTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
-  }
+  };
 
   return (
     <div className="AppPortfolio" data-theme={theme}>
       <div className="content-AppPortfolio">
-        <Switch className='switchTheme' defaultChecked onChange={switchTheme} />
+        <Switch className="switchTheme" defaultChecked onChange={switchTheme} />
         <Layout>
           <NavBar />
           <Content>

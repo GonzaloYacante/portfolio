@@ -4,21 +4,23 @@
 :root {
   --primary-color: @primary-color;
   --titles-sections: @primary-color;
-  --bg-color-primary : @background-color-primary;
+}
+
+[data-theme="dark"] {
+  --bg-color-primary: @background-color-primary;
   --bg-color-secondary: @background-color-secondary;
   --body-background: @background-color-primary;
   --component-background: @background-color-secondary;
-  --text-color: @text-color;
+  --text-color: #d9d9d9;
 }
 
-[data-theme='light'] {
-  --bg-color-primary : rgb(240, 240, 240);
+[data-theme="light"] {
+  --bg-color-primary: #ffffff;
   --bg-color-secondary: #d9d9d9;
-  --body-background: rgb(240, 240, 240);
+  --body-background: #ffffff;
   --component-background: #d9d9d9;
   --text-color: #242727;
 }
-
 
 
 @light-color: #242727;
@@ -31,18 +33,13 @@
 @component-background: @background-color-secondary; // Base background color for most components
 @background-color-primary: #1d1d20; // background color secondary
 @background-color-secondary: #242727; // background color primary
-
-// Layout
-@layout-body-background: @background-color-primary;
-@layout-header-background: #001529;
-
 //Typography
 @link-color: @primary-color; // link color
 @text-color: #d9d9d9; // major text color
 @text-color-secondary: #c1c1c1; // secondary text color
 @text-color-extra: @primary-color; // secondary text color
 @font-size-base: 1.4rem; // major text font size
-@font-family: 'Montserrat', sans-serif;
+@font-family: "Montserrat", sans-serif;
 
 //Message
 @success-color: #52c41a; // success state color
@@ -75,12 +72,26 @@
 // Border color
 @border-color-base: @primary-color;
 
-
 //General styles
 
 .content-AppPortfolio {
   padding: 1.5rem;
   background-color: var(--bg-color-primary);
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 30rem;
+
+  .sections_content {
+    min-height: 30rem;
+    min-width: 30rem;
+    max-width: 80rem;
+  }
 }
 
 .titles-sections {
@@ -91,6 +102,7 @@
   position: absolute;
   top: 3rem;
   right: 4rem;
+  z-index: 1060;
 }
 
 .BackTopButton {
@@ -114,4 +126,40 @@
 .BackTopButton:hover {
   color: var(--bg-color-secondary);
   background-color: var(--primary-color);
+}
+
+/* Tamaño del scroll */
+.container::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+/* Estilos barra (thumb) de scroll */
+.container::-webkit-scrollbar-thumb {
+  background: #242727;
+  border-radius: 0.5rem;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+  box-shadow: 0 0 0.2rem 0.1rem var(--bg-color-secondary);
+}
+
+/* Estilos track de scroll */
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+div.ant-typography, .ant-typography p {
+  margin: 0;
+}
+
+.popover_contain {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .popover-text {
+    margin-top: 1rem;
+    padding: 0;
+  }
 }
