@@ -2,12 +2,22 @@
   height: 12rem;
   background-color: var(--bg-color-primary);
 
-  .footer-icons {
-    font-size: 3rem;
-  }
-  .footer-icons:hover {
-    color: var(--text-color);
-    transform: translateY(-0.5rem);
+  .footer_contain {
+    height: 4rem;
+    width: 4rem;
+
+    .footer_contain-icons {
+      color: var(--primary-color);
+      transition: all 0.5s;
+      font-size: 4rem;
+      height: 4rem;
+      width: 4rem;
+    }
+
+    .footer_contain-icons:hover {
+      color: var(--text-color);
+      transform: translateY(-0.5rem);
+    }
   }
 
   .footer-copyright {
@@ -24,16 +34,16 @@
   width: 5rem;
 
   position: fixed;
-  bottom: 1rem;
+  bottom: 0rem;
   left: 3rem;
 }
 .footer-desktop::after {
   content: "";
   position: relative;
   top: 0;
-  left: 30%;
+  left: 40%;
   width: 0.2rem;
-  height: 5rem;
+  height: 6rem;
   margin-top: 1rem;
   background-color: var(--primary-color);
 }

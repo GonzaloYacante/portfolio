@@ -4,9 +4,6 @@
 :root {
   --primary-color: @primary-color;
   --titles-sections: @primary-color;
-}
-
-[data-theme="dark"] {
   --bg-color-primary: @background-color-primary;
   --bg-color-secondary: @background-color-secondary;
   --body-background: @background-color-primary;
@@ -14,9 +11,12 @@
   --text-color: #d9d9d9;
 }
 
+// [data-theme="dark"] {
+// }
+
 [data-theme="light"] {
-  --bg-color-primary: #ffffff;
-  --bg-color-secondary: #d9d9d9;
+  --bg-color-primary: #d9d9d9;
+  --bg-color-secondary: #ffffff;
   --body-background: #ffffff;
   --component-background: #d9d9d9;
   --text-color: #242727;
@@ -87,10 +87,11 @@
 
   min-height: 30rem;
 
+  width: 100%;
   .sections_content {
-    min-height: 30rem;
     min-width: 30rem;
     max-width: 80rem;
+    min-height: 30rem;
   }
 }
 
@@ -100,7 +101,7 @@
 
 .switchTheme {
   position: absolute;
-  top: 3rem;
+  top: 3.5rem;
   right: 4rem;
   z-index: 1060;
 }
